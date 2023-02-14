@@ -255,8 +255,7 @@ nav a {
 .activities-list {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  max-height: 445px;
+  gap: 20px;
 }
 .activities-card {
   box-shadow: 0 0 10px #8f8f8f;
@@ -293,6 +292,7 @@ nav a {
   list-style-type: none;
   width: 100%;
   padding-right: 50px;
+  padding-left: 0;
 }
 .footer-list li {
   padding-top: 12px;
@@ -314,18 +314,21 @@ nav a {
 .popular-card i {
   font-size: 12px;
   }
-  #blue {
+  .blue {
     color:#0065fc;
   }
-  #grey {
+  .grey {
     color:#D9D9D9;
   }
 
 /* AUTRES MEDIAS */
 
-
+/* TABLETTE */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .filtres {
+    font-size: 14px;
+  }
   .hosting {
     flex-direction: column;
   }
@@ -340,10 +343,11 @@ nav a {
     max-width: 250px;
   }
   .activities-card h3 {
-    font-size: small;
+    font-size: 11px;
   }
 }
 
+/* MOBILE */
 
 @media (max-width: 767px) {
   html {
@@ -374,9 +378,11 @@ nav a {
     padding: 30px;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 3px;
 }
   nav a:hover {
     border-top: none;
+    margin-bottom: 0;
     border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
@@ -421,7 +427,7 @@ nav a {
     display: flex;
     flex-basis: 45%;
     justify-content: center;
-    font-size: 11px;
+    font-size: 12px;
   }
   .hosting {
     flex-direction: column-reverse;
@@ -452,7 +458,9 @@ nav a {
   }
   .activities-list {
     flex-direction: column;
-    flex-basis: 25%;
+}
+.activities-card {
+    max-width: 100%;
 }
   .activities-card img {
     max-height: 200px;
