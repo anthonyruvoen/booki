@@ -294,16 +294,16 @@ nav {
   height: 100%;
   width: 100%;
 }
-#activities-card-img {
+.activities-card-img {
   height: 88%;
 }
-#activities-card-title {
+.activities-card-title {
   height: 12%;
   margin-left: 10px;
 }
 @media (min-width: 992px) and (max-width: 1110px) {
   
-  #activities-card-title h3 {
+  .activities-card-title h3 {
     font-size: 14px;
   }
 }
@@ -379,10 +379,10 @@ p strong {
   .popular-card {
     max-width: 250px;
   }
-  #activities-card-img {
+  .activities-card-img {
     height: 85%;
   }
-  #activities-card-title h3 {
+  .activities-card-title h3 {
     height: 15%;
     margin-left: 5px;
     margin-right: 5px;
@@ -513,7 +513,7 @@ p strong {
   .activities-list {
     flex-direction: column;
   }
-.activities-card {
+  .activities-card {
     max-width: 100%;
   }
   .activities-card img {
